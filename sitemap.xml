@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/posts/34d3c227/</loc>
+    <loc>https://aiyakuaile.github.io/posts/89757140/</loc>
     
     <lastmod>2024-06-20</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/posts/5645e94/</loc>
+    <loc>https://aiyakuaile.github.io/posts/34d3c227/</loc>
     
     <lastmod>2024-06-20</lastmod>
     
@@ -56,7 +56,16 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/posts/89757140/</loc>
+    <loc>https://aiyakuaile.github.io/posts/5645e94/</loc>
+    
+    <lastmod>2024-06-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aiyakuaile.github.io/posts/2df239ce/</loc>
     
     <lastmod>2024-06-20</lastmod>
     
@@ -101,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/magic/assets/AssetManifest.bin.json</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aiyakuaile.github.io/magic/assets/AssetManifest.json</loc>
     
     <lastmod>2024-06-20</lastmod>
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/</loc>
+    <loc>https://aiyakuaile.github.io/magic/assets/AssetManifest.bin.json</loc>
     
     <lastmod>2024-06-20</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/posts/2df239ce/</loc>
+    <loc>https://aiyakuaile.github.io/categories/</loc>
     
     <lastmod>2024-06-20</lastmod>
     
@@ -187,49 +187,49 @@
 
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Docker/</loc>
+    <loc>https://aiyakuaile.github.io/categories/docker/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Flutter/</loc>
+    <loc>https://aiyakuaile.github.io/categories/java/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Java/</loc>
+    <loc>https://aiyakuaile.github.io/categories/flutter/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Python/</loc>
+    <loc>https://aiyakuaile.github.io/categories/python/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Rust/</loc>
+    <loc>https://aiyakuaile.github.io/categories/rust/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Web/</loc>
+    <loc>https://aiyakuaile.github.io/categories/web/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/categories/Demo/</loc>
+    <loc>https://aiyakuaile.github.io/categories/demo/</loc>
     <lastmod>2024-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
