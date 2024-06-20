@@ -74,60 +74,6 @@
   </url>
   
   <url>
-    <loc>https://aiyakuaile.github.io/magic/version.json</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aiyakuaile.github.io/magic/manifest.json</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aiyakuaile.github.io/magic/</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aiyakuaile.github.io/magic/assets/FontManifest.json</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aiyakuaile.github.io/magic/assets/AssetManifest.bin.json</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aiyakuaile.github.io/magic/assets/AssetManifest.json</loc>
-    
-    <lastmod>2024-06-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aiyakuaile.github.io/categories/</loc>
     
     <lastmod>2024-06-20</lastmod>
