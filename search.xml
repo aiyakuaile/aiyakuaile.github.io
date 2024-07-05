@@ -610,6 +610,221 @@
       </categories>
   </entry>
   <entry>
+    <title>Rust开发介绍</title>
+    <url>/posts/4272e27e/</url>
+    <content><![CDATA[<h2 id="Rust-技术介绍与学习路线"><a href="#Rust-技术介绍与学习路线" class="headerlink" title="Rust 技术介绍与学习路线"></a>Rust 技术介绍与学习路线</h2><h3 id="什么是-Rust？"><a href="#什么是-Rust？" class="headerlink" title="什么是 Rust？"></a>什么是 Rust？</h3><p>Rust 是一种由 Mozilla 研究人员 Graydon Hoare 于 2010 年推出的系统编程语言。Rust 以其内存安全性、高性能和并发性而闻名，尤其适用于系统级编程，如操作系统、嵌入式系统和高性能 Web 服务。Rust 的语法和特性使其成为现代 C++ 的强有力替代品。</p>
+<h3 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h3><ol>
+<li><p><strong>内存安全</strong>：</p>
+<ul>
+<li>Rust 的所有权系统（Ownership System）通过编译时检查来确保内存安全，避免了空指针和悬挂指针等常见问题。</li>
+</ul>
+</li>
+<li><p><strong>高性能</strong>：</p>
+<ul>
+<li>Rust 无需垃圾回收器，编译后的代码可以达到与 C 和 C++ 相媲美的运行速度。</li>
+</ul>
+</li>
+<li><p><strong>并发性</strong>：</p>
+<ul>
+<li>Rust 的所有权系统和借用检查器（Borrow Checker）可以在编译时防止数据竞争，使并发编程更加安全。</li>
+</ul>
+</li>
+<li><p><strong>现代语法</strong>：</p>
+<ul>
+<li>Rust 拥有现代化的语法，支持模式匹配、泛型、闭包等特性。</li>
+</ul>
+</li>
+<li><p><strong>强大的生态系统</strong>：</p>
+<ul>
+<li>Rust 拥有丰富的第三方库（crates），并且有高效的包管理器和构建工具 Cargo。</li>
+</ul>
+</li>
+</ol>
+<h3 id="主要技术栈"><a href="#主要技术栈" class="headerlink" title="主要技术栈"></a>主要技术栈</h3><h4 id="基础部分"><a href="#基础部分" class="headerlink" title="基础部分"></a>基础部分</h4><ol>
+<li><p><strong>Rust 语言基础</strong>：</p>
+<ul>
+<li>语法基础、数据类型、运算符、控制流、函数、模块和包等。</li>
+</ul>
+</li>
+<li><p><strong>所有权系统</strong>：</p>
+<ul>
+<li>理解所有权、借用和生命周期，是 Rust 最重要的概念。</li>
+</ul>
+</li>
+<li><p><strong>常用标准库</strong>：</p>
+<ul>
+<li>学习常用标准库，如 collections（Vec、HashMap 等）、I&#x2F;O、文件系统操作等。</li>
+</ul>
+</li>
+</ol>
+<h4 id="高级部分"><a href="#高级部分" class="headerlink" title="高级部分"></a>高级部分</h4><ol>
+<li><p><strong>错误处理</strong>：</p>
+<ul>
+<li>学习 Rust 的错误处理机制，包括 Result 和 Option 类型。</li>
+</ul>
+</li>
+<li><p><strong>并发编程</strong>：</p>
+<ul>
+<li>学习 Rust 中的并发编程模型，如线程、消息传递（channels）、同步原语（Mutex、RwLock 等）。</li>
+</ul>
+</li>
+<li><p><strong>异步编程</strong>：</p>
+<ul>
+<li>学习 Rust 的异步编程模型和 async&#x2F;await 语法。</li>
+</ul>
+</li>
+<li><p><strong>宏和元编程</strong>：</p>
+<ul>
+<li>学习 Rust 的宏系统和元编程技巧。</li>
+</ul>
+</li>
+</ol>
+<h4 id="Web-开发"><a href="#Web-开发" class="headerlink" title="Web 开发"></a>Web 开发</h4><ol>
+<li><p><strong>Actix 和 Rocket</strong>：</p>
+<ul>
+<li>学习基于 Rust 的高性能 Web 框架 Actix 和 Rocket，用于构建 Web 应用和 API。</li>
+</ul>
+</li>
+<li><p><strong>数据库操作</strong>：</p>
+<ul>
+<li>学习使用 Diesel 或 SQLx 等 ORM 库进行数据库操作。</li>
+</ul>
+</li>
+</ol>
+<h4 id="系统编程"><a href="#系统编程" class="headerlink" title="系统编程"></a>系统编程</h4><ol>
+<li><p><strong>操作系统开发</strong>：</p>
+<ul>
+<li>学习如何用 Rust 开发操作系统内核和驱动程序。</li>
+</ul>
+</li>
+<li><p><strong>嵌入式编程</strong>：</p>
+<ul>
+<li>学习 Rust 在嵌入式系统中的应用，包括使用 no_std 库。</li>
+</ul>
+</li>
+</ol>
+<h3 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h3><h4 id="第一阶段：基础知识"><a href="#第一阶段：基础知识" class="headerlink" title="第一阶段：基础知识"></a>第一阶段：基础知识</h4><ol>
+<li><p><strong>Rust 基础语法</strong>：</p>
+<ul>
+<li>学习变量、数据类型、运算符、控制语句（if、for、while 等）。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/book/">The Rust Programming Language (The Book)</a></li>
+</ul>
+</li>
+<li><p><strong>所有权系统</strong>：</p>
+<ul>
+<li>理解所有权、借用和生命周期的概念和应用。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Rust 所有权</a></li>
+</ul>
+</li>
+<li><p><strong>常用标准库</strong>：</p>
+<ul>
+<li>学习常用的标准库，如 collections、I&#x2F;O 操作、文件系统操作。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/std/">Rust 标准库</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="第二阶段：进阶知识"><a href="#第二阶段：进阶知识" class="headerlink" title="第二阶段：进阶知识"></a>第二阶段：进阶知识</h4><ol>
+<li><p><strong>错误处理</strong>：</p>
+<ul>
+<li>学习 Result 和 Option 类型的使用，掌握错误处理的最佳实践。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/book/ch09-00-error-handling.html">错误处理</a></li>
+</ul>
+</li>
+<li><p><strong>并发编程</strong>：</p>
+<ul>
+<li>学习 Rust 中的线程、消息传递和同步原语。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/book/ch16-00-concurrency.html">Rust 并发编程</a></li>
+</ul>
+</li>
+<li><p><strong>异步编程</strong>：</p>
+<ul>
+<li>学习 async&#x2F;await 语法和异步编程模型。</li>
+<li>参考资料：<a href="https://rust-lang.github.io/async-book/">Rust 异步编程</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="第三阶段：Web-开发"><a href="#第三阶段：Web-开发" class="headerlink" title="第三阶段：Web 开发"></a>第三阶段：Web 开发</h4><ol>
+<li><p><strong>Actix 和 Rocket</strong>：</p>
+<ul>
+<li>学习 Actix 和 Rocket 框架的基础，构建简单的 Web 应用和 API。</li>
+<li>参考资料：<a href="https://actix.rs/">Actix 官方文档</a> 和 <a href="https://rocket.rs/v0.4/guide/">Rocket 官方文档</a></li>
+</ul>
+</li>
+<li><p><strong>数据库操作</strong>：</p>
+<ul>
+<li>学习使用 Diesel 或 SQLx 进行数据库操作，编写数据库查询和事务。</li>
+<li>参考资料：<a href="https://diesel.rs/guides/getting-started/">Diesel 官方文档</a> 和 <a href="https://docs.rs/sqlx/">SQLx 官方文档</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="第四阶段：系统编程"><a href="#第四阶段：系统编程" class="headerlink" title="第四阶段：系统编程"></a>第四阶段：系统编程</h4><ol>
+<li><p><strong>操作系统开发</strong>：</p>
+<ul>
+<li>学习操作系统开发的基本原理，用 Rust 编写简单的操作系统内核。</li>
+<li>参考资料：<a href="https://os.phil-opp.com/">Writing an OS in Rust</a></li>
+</ul>
+</li>
+<li><p><strong>嵌入式编程</strong>：</p>
+<ul>
+<li>学习嵌入式系统的开发，用 Rust 编写嵌入式程序。</li>
+<li>参考资料：<a href="https://rust-embedded.github.io/book/">Rust Embedded</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="第五阶段：项目实战"><a href="#第五阶段：项目实战" class="headerlink" title="第五阶段：项目实战"></a>第五阶段：项目实战</h4><ol>
+<li><p><strong>项目初始化</strong>：</p>
+<ul>
+<li>创建一个新的 Rust 项目，配置项目结构和必要的依赖。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/cargo/">Cargo 指南</a></li>
+</ul>
+</li>
+<li><p><strong>开发实战项目</strong>：</p>
+<ul>
+<li>开发一个完整的应用，如 Web 服务、命令行工具、嵌入式系统等。</li>
+<li>实践过程中注意代码规范、性能优化和调试技巧。</li>
+</ul>
+</li>
+<li><p><strong>测试和部署</strong>：</p>
+<ul>
+<li>学习单元测试、集成测试和持续集成&#x2F;持续部署（CI&#x2F;CD）。</li>
+<li>参考资料：<a href="https://doc.rust-lang.org/book/ch11-00-testing.html">Rust Testing</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h3><ul>
+<li><p><strong>官方文档</strong>：</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/">The Rust Programming Language (The Book)</a></li>
+<li><a href="https://doc.rust-lang.org/std/">Rust 标准库</a></li>
+<li><a href="https://doc.rust-lang.org/cargo/">Cargo 指南</a></li>
+</ul>
+</li>
+<li><p><strong>在线课程</strong>：</p>
+<ul>
+<li><a href="https://www.udemy.com/course/ultimate-rust-crash-course/">Udemy - Ultimate Rust Crash Course</a></li>
+<li><a href="https://www.coursera.org/learn/programming-languages-part-c">Coursera - Programming Languages, Part C (includes Rust)</a></li>
+</ul>
+</li>
+<li><p><strong>书籍</strong>：</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/">《The Rust Programming Language》</a></li>
+<li><a href="https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/">《Programming Rust》</a></li>
+</ul>
+</li>
+<li><p><strong>社区和论坛</strong>：</p>
+<ul>
+<li><a href="https://users.rust-lang.org/">Rust 用户论坛</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/rust">Stack Overflow</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>Rust 是一种强大且灵活的系统编程语言，通过系统的学习和实践，可以掌握从基础到高级的各个方面，并能够开发出高性能、安全的应用程序。持续学习和实践，保持对新技术的敏感，将帮助你在 Rust 开发领域不断进步。</p>
+]]></content>
+      <categories>
+        <category>rust</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Python开发介绍</title>
     <url>/posts/662392d7/</url>
     <content><![CDATA[<h2 id="Python-技术介绍与学习路线"><a href="#Python-技术介绍与学习路线" class="headerlink" title="Python 技术介绍与学习路线"></a>Python 技术介绍与学习路线</h2><h3 id="什么是-Python？"><a href="#什么是-Python？" class="headerlink" title="什么是 Python？"></a>什么是 Python？</h3><p>Python 是一种由 Guido van Rossum 于 1991 年发布的高级编程语言，以其简洁和易读的语法而闻名。Python 具有强大的标准库和丰富的第三方库，广泛应用于 Web 开发、数据分析、人工智能、自动化脚本、科学计算等多个领域。</p>
@@ -845,221 +1060,6 @@
 ]]></content>
       <categories>
         <category>python</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Rust开发介绍</title>
-    <url>/posts/4272e27e/</url>
-    <content><![CDATA[<h2 id="Rust-技术介绍与学习路线"><a href="#Rust-技术介绍与学习路线" class="headerlink" title="Rust 技术介绍与学习路线"></a>Rust 技术介绍与学习路线</h2><h3 id="什么是-Rust？"><a href="#什么是-Rust？" class="headerlink" title="什么是 Rust？"></a>什么是 Rust？</h3><p>Rust 是一种由 Mozilla 研究人员 Graydon Hoare 于 2010 年推出的系统编程语言。Rust 以其内存安全性、高性能和并发性而闻名，尤其适用于系统级编程，如操作系统、嵌入式系统和高性能 Web 服务。Rust 的语法和特性使其成为现代 C++ 的强有力替代品。</p>
-<h3 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h3><ol>
-<li><p><strong>内存安全</strong>：</p>
-<ul>
-<li>Rust 的所有权系统（Ownership System）通过编译时检查来确保内存安全，避免了空指针和悬挂指针等常见问题。</li>
-</ul>
-</li>
-<li><p><strong>高性能</strong>：</p>
-<ul>
-<li>Rust 无需垃圾回收器，编译后的代码可以达到与 C 和 C++ 相媲美的运行速度。</li>
-</ul>
-</li>
-<li><p><strong>并发性</strong>：</p>
-<ul>
-<li>Rust 的所有权系统和借用检查器（Borrow Checker）可以在编译时防止数据竞争，使并发编程更加安全。</li>
-</ul>
-</li>
-<li><p><strong>现代语法</strong>：</p>
-<ul>
-<li>Rust 拥有现代化的语法，支持模式匹配、泛型、闭包等特性。</li>
-</ul>
-</li>
-<li><p><strong>强大的生态系统</strong>：</p>
-<ul>
-<li>Rust 拥有丰富的第三方库（crates），并且有高效的包管理器和构建工具 Cargo。</li>
-</ul>
-</li>
-</ol>
-<h3 id="主要技术栈"><a href="#主要技术栈" class="headerlink" title="主要技术栈"></a>主要技术栈</h3><h4 id="基础部分"><a href="#基础部分" class="headerlink" title="基础部分"></a>基础部分</h4><ol>
-<li><p><strong>Rust 语言基础</strong>：</p>
-<ul>
-<li>语法基础、数据类型、运算符、控制流、函数、模块和包等。</li>
-</ul>
-</li>
-<li><p><strong>所有权系统</strong>：</p>
-<ul>
-<li>理解所有权、借用和生命周期，是 Rust 最重要的概念。</li>
-</ul>
-</li>
-<li><p><strong>常用标准库</strong>：</p>
-<ul>
-<li>学习常用标准库，如 collections（Vec、HashMap 等）、I&#x2F;O、文件系统操作等。</li>
-</ul>
-</li>
-</ol>
-<h4 id="高级部分"><a href="#高级部分" class="headerlink" title="高级部分"></a>高级部分</h4><ol>
-<li><p><strong>错误处理</strong>：</p>
-<ul>
-<li>学习 Rust 的错误处理机制，包括 Result 和 Option 类型。</li>
-</ul>
-</li>
-<li><p><strong>并发编程</strong>：</p>
-<ul>
-<li>学习 Rust 中的并发编程模型，如线程、消息传递（channels）、同步原语（Mutex、RwLock 等）。</li>
-</ul>
-</li>
-<li><p><strong>异步编程</strong>：</p>
-<ul>
-<li>学习 Rust 的异步编程模型和 async&#x2F;await 语法。</li>
-</ul>
-</li>
-<li><p><strong>宏和元编程</strong>：</p>
-<ul>
-<li>学习 Rust 的宏系统和元编程技巧。</li>
-</ul>
-</li>
-</ol>
-<h4 id="Web-开发"><a href="#Web-开发" class="headerlink" title="Web 开发"></a>Web 开发</h4><ol>
-<li><p><strong>Actix 和 Rocket</strong>：</p>
-<ul>
-<li>学习基于 Rust 的高性能 Web 框架 Actix 和 Rocket，用于构建 Web 应用和 API。</li>
-</ul>
-</li>
-<li><p><strong>数据库操作</strong>：</p>
-<ul>
-<li>学习使用 Diesel 或 SQLx 等 ORM 库进行数据库操作。</li>
-</ul>
-</li>
-</ol>
-<h4 id="系统编程"><a href="#系统编程" class="headerlink" title="系统编程"></a>系统编程</h4><ol>
-<li><p><strong>操作系统开发</strong>：</p>
-<ul>
-<li>学习如何用 Rust 开发操作系统内核和驱动程序。</li>
-</ul>
-</li>
-<li><p><strong>嵌入式编程</strong>：</p>
-<ul>
-<li>学习 Rust 在嵌入式系统中的应用，包括使用 no_std 库。</li>
-</ul>
-</li>
-</ol>
-<h3 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h3><h4 id="第一阶段：基础知识"><a href="#第一阶段：基础知识" class="headerlink" title="第一阶段：基础知识"></a>第一阶段：基础知识</h4><ol>
-<li><p><strong>Rust 基础语法</strong>：</p>
-<ul>
-<li>学习变量、数据类型、运算符、控制语句（if、for、while 等）。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/book/">The Rust Programming Language (The Book)</a></li>
-</ul>
-</li>
-<li><p><strong>所有权系统</strong>：</p>
-<ul>
-<li>理解所有权、借用和生命周期的概念和应用。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Rust 所有权</a></li>
-</ul>
-</li>
-<li><p><strong>常用标准库</strong>：</p>
-<ul>
-<li>学习常用的标准库，如 collections、I&#x2F;O 操作、文件系统操作。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/std/">Rust 标准库</a></li>
-</ul>
-</li>
-</ol>
-<h4 id="第二阶段：进阶知识"><a href="#第二阶段：进阶知识" class="headerlink" title="第二阶段：进阶知识"></a>第二阶段：进阶知识</h4><ol>
-<li><p><strong>错误处理</strong>：</p>
-<ul>
-<li>学习 Result 和 Option 类型的使用，掌握错误处理的最佳实践。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/book/ch09-00-error-handling.html">错误处理</a></li>
-</ul>
-</li>
-<li><p><strong>并发编程</strong>：</p>
-<ul>
-<li>学习 Rust 中的线程、消息传递和同步原语。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/book/ch16-00-concurrency.html">Rust 并发编程</a></li>
-</ul>
-</li>
-<li><p><strong>异步编程</strong>：</p>
-<ul>
-<li>学习 async&#x2F;await 语法和异步编程模型。</li>
-<li>参考资料：<a href="https://rust-lang.github.io/async-book/">Rust 异步编程</a></li>
-</ul>
-</li>
-</ol>
-<h4 id="第三阶段：Web-开发"><a href="#第三阶段：Web-开发" class="headerlink" title="第三阶段：Web 开发"></a>第三阶段：Web 开发</h4><ol>
-<li><p><strong>Actix 和 Rocket</strong>：</p>
-<ul>
-<li>学习 Actix 和 Rocket 框架的基础，构建简单的 Web 应用和 API。</li>
-<li>参考资料：<a href="https://actix.rs/">Actix 官方文档</a> 和 <a href="https://rocket.rs/v0.4/guide/">Rocket 官方文档</a></li>
-</ul>
-</li>
-<li><p><strong>数据库操作</strong>：</p>
-<ul>
-<li>学习使用 Diesel 或 SQLx 进行数据库操作，编写数据库查询和事务。</li>
-<li>参考资料：<a href="https://diesel.rs/guides/getting-started/">Diesel 官方文档</a> 和 <a href="https://docs.rs/sqlx/">SQLx 官方文档</a></li>
-</ul>
-</li>
-</ol>
-<h4 id="第四阶段：系统编程"><a href="#第四阶段：系统编程" class="headerlink" title="第四阶段：系统编程"></a>第四阶段：系统编程</h4><ol>
-<li><p><strong>操作系统开发</strong>：</p>
-<ul>
-<li>学习操作系统开发的基本原理，用 Rust 编写简单的操作系统内核。</li>
-<li>参考资料：<a href="https://os.phil-opp.com/">Writing an OS in Rust</a></li>
-</ul>
-</li>
-<li><p><strong>嵌入式编程</strong>：</p>
-<ul>
-<li>学习嵌入式系统的开发，用 Rust 编写嵌入式程序。</li>
-<li>参考资料：<a href="https://rust-embedded.github.io/book/">Rust Embedded</a></li>
-</ul>
-</li>
-</ol>
-<h4 id="第五阶段：项目实战"><a href="#第五阶段：项目实战" class="headerlink" title="第五阶段：项目实战"></a>第五阶段：项目实战</h4><ol>
-<li><p><strong>项目初始化</strong>：</p>
-<ul>
-<li>创建一个新的 Rust 项目，配置项目结构和必要的依赖。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/cargo/">Cargo 指南</a></li>
-</ul>
-</li>
-<li><p><strong>开发实战项目</strong>：</p>
-<ul>
-<li>开发一个完整的应用，如 Web 服务、命令行工具、嵌入式系统等。</li>
-<li>实践过程中注意代码规范、性能优化和调试技巧。</li>
-</ul>
-</li>
-<li><p><strong>测试和部署</strong>：</p>
-<ul>
-<li>学习单元测试、集成测试和持续集成&#x2F;持续部署（CI&#x2F;CD）。</li>
-<li>参考资料：<a href="https://doc.rust-lang.org/book/ch11-00-testing.html">Rust Testing</a></li>
-</ul>
-</li>
-</ol>
-<h3 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h3><ul>
-<li><p><strong>官方文档</strong>：</p>
-<ul>
-<li><a href="https://doc.rust-lang.org/book/">The Rust Programming Language (The Book)</a></li>
-<li><a href="https://doc.rust-lang.org/std/">Rust 标准库</a></li>
-<li><a href="https://doc.rust-lang.org/cargo/">Cargo 指南</a></li>
-</ul>
-</li>
-<li><p><strong>在线课程</strong>：</p>
-<ul>
-<li><a href="https://www.udemy.com/course/ultimate-rust-crash-course/">Udemy - Ultimate Rust Crash Course</a></li>
-<li><a href="https://www.coursera.org/learn/programming-languages-part-c">Coursera - Programming Languages, Part C (includes Rust)</a></li>
-</ul>
-</li>
-<li><p><strong>书籍</strong>：</p>
-<ul>
-<li><a href="https://doc.rust-lang.org/book/">《The Rust Programming Language》</a></li>
-<li><a href="https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/">《Programming Rust》</a></li>
-</ul>
-</li>
-<li><p><strong>社区和论坛</strong>：</p>
-<ul>
-<li><a href="https://users.rust-lang.org/">Rust 用户论坛</a></li>
-<li><a href="https://stackoverflow.com/questions/tagged/rust">Stack Overflow</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>Rust 是一种强大且灵活的系统编程语言，通过系统的学习和实践，可以掌握从基础到高级的各个方面，并能够开发出高性能、安全的应用程序。持续学习和实践，保持对新技术的敏感，将帮助你在 Rust 开发领域不断进步。</p>
-]]></content>
-      <categories>
-        <category>rust</category>
       </categories>
   </entry>
   <entry>
