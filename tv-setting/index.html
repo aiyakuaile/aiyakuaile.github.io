@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <base href="/tv-setting">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极简TV远程配置项</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>极简TV远程配置项</h1>
+        <div class="form-header">
+            <button type="button" id="initFromClipboardBtn" class="init-btn">从剪贴板初始化</button>
+        </div>
+        <form id="dataForm">
+            <div id="formFields">
+                <!-- 表单字段将通过JavaScript动态生成 -->
+            </div>
+            <div class="form-actions">
+                <button type="button" id="downloadBtn">下载数据</button>
+                <button type="button" id="copyJsonBtn">复制JSON</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
