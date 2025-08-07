@@ -579,7 +579,9 @@ class FormBuilder {
    * @returns {Object} - 表单数据对象
    */
   getData() {
-    const data = {};
+    const data = {
+      dtaId: Date.now(),
+    };
 
     this.fields.forEach((field) => {
       if (field.type === "sortable-array") {
