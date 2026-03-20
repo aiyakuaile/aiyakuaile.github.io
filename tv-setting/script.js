@@ -820,12 +820,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
       15
     )
-    .addSwitchField(
-      "leftRightSelect",
-      "上下键切换频道(仅TV版可用)",
-      "开启后原先的设置页面和线路选择页面改成左右键打开",
-      true
-    )
     .addSelectField(
       "fontScale",
       "字体大小",
